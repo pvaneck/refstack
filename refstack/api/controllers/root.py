@@ -28,12 +28,13 @@ class RootController(object):
 
     v1 = v1.V1Controller()
 
-    if CONF.api.app_dev_mode:
-        @expose(generic=True, template='index.html')
-        def index(self):
-            """Return index.html in development mode.
+    
+    @expose(generic=True, template='index.html')
+    def index(self):
+        """Return index.html in development mode.
 
-            It allows to run both API and UI with pecan serve.
-            Template path should point into UI app folder
-            """
-            return dict()
+           It allows to run both API and UI with pecan serve.
+           Template path should point into UI app folder
+        """
+        return dict()
+
