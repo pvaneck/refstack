@@ -29,7 +29,7 @@ class RootController(object):
     v1 = v1.V1Controller()
 
     
-    @expose(generic=True)
+    @expose('json')
     def index(self):
         """Return index.html in development mode.
 
