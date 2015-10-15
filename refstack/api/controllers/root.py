@@ -36,5 +36,5 @@ class RootController(object):
            It allows to run both API and UI with pecan serve.
            Template path should point into UI app folder
         """
-        return {'it': 'works!!!'}
+        return {'it!!!': 'works!!!'}
 
